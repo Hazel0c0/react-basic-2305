@@ -22,4 +22,5 @@ $ npm start
 
 
 ## git clone시 주의사항
+- node.modules 는 올리지 않음 (용량 커서) ->
 - `$ npm install` 명령을 터미널에서 실행하여 라이브러리 설치
