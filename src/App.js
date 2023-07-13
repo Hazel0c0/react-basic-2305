@@ -2,6 +2,7 @@ import SayHello from './SayHello';
 import Counter from './component/chap03_state/Counter';
 import NickName from './component/chap03_state/NickName';
 import SubmitEvent from "./component/chap01_event/SubmitEvent";
+import FoodList from "./component/chap02_props/FoodList";
 
 function App() {
 
@@ -18,7 +19,9 @@ function App() {
   return (
       <>
         {/*<SubmitEvent />*/}
-        <Counter />
+        {/*<FoodList />*/}
+        <NickName />
+        {/*<Counter />*/}
       </>
   );
 }
