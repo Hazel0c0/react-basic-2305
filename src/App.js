@@ -21,7 +21,7 @@ function App() {
         {/*<SubmitEvent />*/}
         {/*<FoodList />*/}
         <NickName />
-        {/*<Counter />*/}
+        <Counter />
       </>
   );
 }

@@ -15,7 +15,8 @@ const NickName = props => {
   const changeNickName = e => {
     console.log('changeNickName!! call!');
 
-    // nickName = '척척박사';
+    // nickName = '척척박사'; 직접 바꾸는게 아니라
+    // set~을 통해서 상태변수를 바꿔주기
     setNickName('척척박사');
     console.log('nickName: ', nickName);
   };
