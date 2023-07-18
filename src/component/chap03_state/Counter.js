@@ -16,16 +16,21 @@ const Counter = () => {
     - 상태값이 변경될 때마다 다시 호출
     - 만약에 첫 렌더링 시에만 useEffect를 호출하고 싶다면
       두번째 파라미터로 빈 배열(의존성 배열)을 넣으면 된다.
-    - 의존성 배열에 상태변수를 넣으면 해당 상태변수가 업데이트 될 때
+    - 의존성 배열([])에 상태변수를 넣으면 해당 상태변수가 업데이트 될 때
       마다 useEffect가 재 호출됨.
   */
   useEffect(() => {
+    // 렌더링이 된 이후 실행
+
     // 화면이 처음 렌더링 될 때 서버 api호출하는 경우
     // 처음 1회 호출후에 또 할 필요가 있을까??
     console.log('3. useEffect Call!!');
     console.log(`4. nick: ${nick}, number: ${number}`);
   }, [nick, number]);
+// [] 빈괄호 <- 아무것도 없으면 처음에만 렌더링
+// [...] 있다면 ...이 변할 때 마다 다시 렌더링 됨
 
+  // 실행 순서
   console.log('1. component function execute!');
 
   return (
