@@ -33,6 +33,13 @@ const Counter = () => {
   // 실행 순서
   console.log('1. component function execute!');
 
+  /*
+    1. 일반적인 함수
+    2. 리턴문 
+    3. 호출된 함수 (onClick..)
+    순으로 실행됨 
+  */
+
   return (
     <>
         { console.log('2. redered html!!') }
